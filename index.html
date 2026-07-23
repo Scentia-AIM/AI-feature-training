@@ -8,151 +8,305 @@
 </head>
 <body>
 
-<main id="mainsection">
 
-<div class="mainbox">
+<section class="popupbox1">
+    <h1>AI feature activation</h1>
+    <p style="color: white;">There are two AI features launched across AIM and ABS currently: The AI Course Tutor, and the AI Assessment Assistant.
+        <br>Both features need to be “activated” by the business before they can be rolled out to students. 
+        Once you have decided you are happy with the way the features are performing and they are ready to be student-facing, 
+        you can activate them yourself for student use.
+    </p>
 
-<h1>AI feature activation</h1>
-<p>There are two AI features launched across AIM and ABS currently: The AI Course Tutor, and the AI Assessment Assistant.
-    <br>Both features need to be “activated” by the business before they can be rolled out to students. 
-    Once you have decided you are happy with the way the features are performing and they are ready to be student-facing, 
-    you can activate them yourself for student use.
-</p>
-
-<!-- Feature Cards -->
-<!-- <div class="featurecardsparentcontainer">
-    <div class=featurecard1 onclick="this.classList.toggle('flip')">
-        <div class=featurecard1front>
-            <h2 class="overlaytext">AI Course Tutor</h3>
-            <p class="subtext">Click to find out more</p>
+    <div class="featurecardparentcontainer">
+        <div class="featurecard">
+            <div class="featurecard1" onclick="this.classList.toggle('flip')">
+                <div class="featurecard1front">
+                    <h2>AI Course Tutor</h2>
+                    <p>Click here to learn more</p>
+                </div>
+                <div class="featurecard1back">
+                    <h2>AI Course Tutor</h2>
+                    <h4>What is this?</h4>
+                    <p>An “always on” agent that can answer basic course/content-related queries (e.g. “What does X term mean?” or “When’s the next due date?”).</p>
+                    <h4>What does it enable?</h4>
+                    <p>Provide an immediate first line of support, reduce unnecessary escalations, and embed guidance directly within the learning experience.</p>
+                </div>
+            </div>
         </div>
-        <div class="featurecard1back">
-            <h2>AI Course Tutor</h2>
-            <h4>What is this?</h4>
-            <p>An “always on” agent that can answer basic course/content-related queries (e.g. “What does X term mean?” or “When’s the next due date?”).</p>
-            <h4>What does it enable?</h4>
-            <p>Provide an immediate first line of support, reduce unnecessary escalations, and embed guidance directly within the learning experience.</p>
+        <div class="featurecard">
+            <div class="featurecard2" onclick="this.classList.toggle('flip')">
+                <div class="featurecard2front">
+                    <h2>AI Assessment Assistant</h2>
+                    <p>Click here to learn more</p>
+                </div>
+                <div class="featurecard2back">
+                    <h2>AI Assessment Tutor</h2>
+                    <h4>What is this?</h4>
+                    <p>Allow students to upload draft submissions into a judgement-free environment and receive structured suggestions for improvement prior to due dates.</p>
+                    <h4>What does this enable?</h4>
+                    <p>Reduce assessment anxiety, improve learning outcomes, and help students develop clearer expectations of their performance.</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class=featurecard2 onclick="this.classList.toggle('flip')">
-        <div class=featurecard2front></div>
-            <h2 class="overlaytext">AI Assessment Assistant</h3>
-            <p class="subtext">Click to find out more</p>
-        <div class="featurecard2back">
-            <h2>AI Assessment Tutor</h2>
-            <h4>What is this?</h4>
-            <p>Allow students to upload draft submissions into a judgement-free environment and receive structured suggestions for improvement prior to due dates.</p>
-            <h4>What does this enable?</h4>
-            <p>Reduce assessment anxiety, improve learning outcomes, and help students develop clearer expectations of their performance.</p>
+</section>
+
+
+<section class="popupbox2">
+    <h1>How do I activate these features?</h1>
+    
+<!-- Opening the modal -->
+    <div class="brandbuttoncontainer">
+        <button class="brandbutton" id="AIMbrandbutton"></button>
+        <button class="brandbutton" id="ABSbrandbutton"></button>
+    </div>
+
+<!-- AIM: The Modal and Content -->
+<div id="AIMmodal" class="modal">
+    <div class="modalcontent" id="AIMfeaturemodalcontent">
+        <span class="close">&times;</span>
+        <div class="featureinstructionsheader">Feature 1: AI Course Tutor</div>
+        <div class="feature1instructions">
+            <video  width="640" height="360" src="assets/MyAIM F1 video.mp4" type="video/mp4" controls=""></video>
+            <div class="writteninstructions">
+                <ol>
+                    <li>Log in to MyAIM.</li>
+                    <li>Select course (where the AI feature is available).</li>
+                    <li>Click on the settings icon in the top right corner.</li>
+                    <li>Scroll to the bottom and expand the “AI course tutor” dropdown.</li>
+                    <li>Tick the “enable” box (it will turn blue).</li>
+                    <li>Click on "save and display".</li>
+                </ol>
+            </div>
         </div>
+        <div class="featureinstructionsheader">Feature 2: AI Assessment Assistant</div>
+        <div class="feature2instructions">
+            <ol>
+                <div class="carouselcardcontainer">
+                    <div class="carouselcard">
+                        <h3>Set up</h3>
+                        <div class="AIMfeature2card">
+                            <h4>Log in to MyAIM and turn on "edit mode"</h4>
+                            <h4>Click into "assessment resources"</h4>
+                            <img src="assets/Edit Mode - AIM F2.png">
+                            <img src="assets/Assessment Res - AIM F2.png">
+                        </div>
+                        <div class="redbox"></div>
+                    </div>
+                    <div class="carouselcard">
+                        <h3>Building the first AI Assessment Assistant "card"</h3>
+                        <div class="AIMfeature2card">
+                            <h4>Addind the AI Assessment Assistant</h4>
+                            <h4>Moving it to the correct location</h4>
+                            <iframe>placeholder</iframe>
+                            <iframe>placeholder</iframe>
+                        </div>    
+                    </div>
+                    <div class="carouselcard">
+                        <h3>Building the "AI Assessment Tutor" cards</h3>
+                        <div class="AIMfeature2card">
+                            <h4>Creating the AI Assessment Assistant card</h4>
+                            <h4>Moving it to the correct location</h4>
+                            <iframe>placeholder</iframe>
+                            <iframe>placeholder</iframe>
+                        </div>
+                    </div>
+                    <div class="carouselcard">
+                        <h3>Building the remaining "AI Assessment Tutor" cards</h3>
+                        <div class="AIMfeature2card">
+                            <h4>Duplication</h4>
+                            <h4>Building from scratch</h4>
+                            <iframe>placeholder</iframe>
+                            <iframe>placeholder</iframe>
+                        </div> 
+                    </div>
+                </div>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!-- ABS: The Modal and Content -->
+ <div id="ABSmodal" class="modal">
+    <div class="modalcontent" id="ABSfeaturemodalcontent">
+        <span class="close">&times;</span>
+        <div class="featureinstructionsheader">Feature 1: AI Course Tutor</div>
+        <div class="feature1instructions">
+            <div style="padding:51.68% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1211860634?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="MyABS F1 video"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            <div class="writteninstructions">
+                <ol>
+                    <li>Log in to MyABS.</li>
+                    <li>Select course (where the AI feature is available).</li>
+                    <li>Click on the settings icon in the top right corner.</li>
+                    <li>Scroll to the bottom and expand the “AI course tutor” dropdown.</li>
+                    <li>Tick the “enable” box (it will turn blue).</li>
+                    <li>Click on "save and display".</li>
+                </ol>
+        </div>
+    </div>
+    <div class="featureinstructionsheader">Feature 2: AI Assessment Assistant</div>
+    <div class="feature2instructions">
+        <h3>AI Assessment Tutor</h3>
+            <div class="carouselcardcontainer">
+                <div class="carouselcard">
+                    <h3>Set up</h3>
+                    <div class="carouselcardcontentcontainer">
+                        <video  width="640" height="360" src="assets/ABS F2 Card1.mp4" type="video/mp4" controls=""></video>
+                        <ol style="border: 1px solid blue;">
+                            <li>Select course (where the AI feature is available).</li>
+                            <li>Turn on “edit mode”.</li> 
+                            <li>Navigate to the “assessment tasks” section.</li>
+                            <li>Select "add an activity or resource".</li>
+                            <li>Click on "AI Assessment Tutor".</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="carouselcard">
+                    <h3>Configuration</h3>
+                    <div class="carouselcardcontentcontainer">
+                        <video  width="640" height="360" src="assets/ABS F2 Card2.mp4" type="video/mp4" controls=""></video>
+                        <ol style="border: 1px solid blue;">
+                            <li>In the "name" box, enter "AI Assessment Tutor: [name of assessment task]".</li>
+                            <li>Link it to the correct assessment task (by selecting the assessment task from the dropdown list).</li> 
+                            <li>Save changes.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="carouselcard">
+                    <h3>Moving and duplication</h3>
+                    <div class="carouselcardcontentcontainer">
+                        <iframe>Video 1</iframe>
+                        <ol style="border: 1px solid blue;">
+                            <li>Once back to the main page, drag the “AI assessment tutor” under the correct assessment task. </li>
+                            <li>For the remaining assessments, you can duplicate the first AI assessment tutor (select the three dots on the top right, and click “duplicate”), but please ensure to change the “name” and link it to the correct assessment task.</li> 
+                        </ol>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<!-- <div class="expandinginstructionscontainer" id="AIMexpandinginstructionscontainer">
+    <div class="featureinstructionsheader">Feature 1: AI Course Tutor</div>
+    <div class="feature1instructions">
+        <video  width="640" height="360" src="assets/MyAIM F1 video.mp4" type="video/mp4" controls=""></video>
+        <div class="writteninstructions">
+                <ol>
+                    <li>Log in to MyAIM.</li>
+                    <li>Select course (where the AI feature is available).</li>
+                    <li>Click on the settings icon in the top right corner.</li>
+                    <li>Scroll to the bottom and expand the “AI course tutor” dropdown.</li>
+                    <li>Tick the “enable” box (it will turn blue).</li>
+                    <li>Click on "save and display".</li>
+                </ol>
+        </div>
+    </div>
+    <div class="featureinstructionsheader">Feature 2: AI Assessment Assistant</div>
+    <div class="feature2instructions">
+            <ol>
+                <div class="carouselcardcontainer">
+                    <div class="carouselcard">
+                        <h3>Set up</h3>
+                        <div class="AIMfeature2card">
+                            <h4>Log in to MyAIM and turn on "edit mode"</h4>
+                            <h4>Click into "assessment resources"</h4>
+                            <img src="assets/Edit Mode - AIM F2.png">
+                            <img src="assets/Assessment Res - AIM F2.png">
+                        </div>
+                        <div class="redbox"></div>
+                    </div>
+                    <div class="carouselcard">
+                        <h3>Building the first AI Assessment Assistant "card"</h3>
+                        <div class="AIMfeature2card">
+                            <h4>Addind the AI Assessment Assistant</h4>
+                            <h4>Moving it to the correct location</h4>
+                            <iframe>placeholder</iframe>
+                            <iframe>placeholder</iframe>
+                        </div>    
+                    </div>
+                    <div class="carouselcard">
+                        <h3>Building the "AI Assessment Tutor" cards</h3>
+                        <div class="AIMfeature2card">
+                            <h4>Creating the AI Assessment Assistant card</h4>
+                            <h4>Moving it to the correct location</h4>
+                            <iframe>placeholder</iframe>
+                            <iframe>placeholder</iframe>
+                        </div>
+                    </div>
+                    <div class="carouselcard">
+                        <h3>Building the remaining "AI Assessment Tutor" cards</h3>
+                        <div class="AIMfeature2card">
+                            <h4>Duplication</h4>
+                            <h4>Building from scratch</h4>
+                            <iframe>placeholder</iframe>
+                            <iframe>placeholder</iframe>
+                        </div> 
+                    </div>
+                </div>
+            </ol>
     </div>
 </div> -->
-<!-- Feature Cards End -->
 
-<div class="featurecardparentcontainer">
-<div class="featurecard">
-    <div class="featurecard1" onclick="this.classList.toggle('flip')">
-        <div class="featurecard1front">
-            <h2>AI Course Tutor</h2>
-            <p>Click here to learn more</p>
-        </div>
-        <div class="featurecard1back">
-            <h2>AI Course Tutor</h2>
-            <h4>What is this?</h4>
-            <p>An “always on” agent that can answer basic course/content-related queries (e.g. “What does X term mean?” or “When’s the next due date?”).</p>
-            <h4>What does it enable?</h4>
-            <p>Provide an immediate first line of support, reduce unnecessary escalations, and embed guidance directly within the learning experience.</p>
-        </div>
-    </div>
-</div>
-<div class="featurecard">
-    <div class="featurecard2" onclick="this.classList.toggle('flip')">
-        <div class="featurecard2front">
-            <h2>AI Assessment Assistant</h2>
-            <p>Click here to learn more</p>
-        </div>
-        <div class="featurecard2back">
-            <h2>AI Assessment Tutor</h2>
-            <h4>What is this?</h4>
-            <p>Allow students to upload draft submissions into a judgement-free environment and receive structured suggestions for improvement prior to due dates.</p>
-            <h4>What does this enable?</h4>
-            <p>Reduce assessment anxiety, improve learning outcomes, and help students develop clearer expectations of their performance.</p>
-        </div>
-    </div>
-</div>
-</div>
-
-
-<div id="heading">How do I activate these features?</div>
-
-
-<div class="brandbuttoncontainer">
-    <button class="brandbutton" id="AIMbrandbutton"></button>
-    <button class="brandbutton" id="ABSbrandbutton"></button>
-</div>
-
-<div class="expandinginstructionscontainer" id="AIMexpandinginstructionscontainer">
+<!-- <div class="expandinginstructionscontainer" id="ABSexpandinginstructionscontainer">
+    <div class="featureinstructionsheader">Feature 1: AI Course Tutor</div>
     <div class="feature1instructions">
-        <h3>AI Course Tutor</h3>
-            <ol>
-                <li>Log in to MyABS</li>
-                <li>Go into course</li>
-                <li>Settings</li>
-                <li>Last one - AI course tutor - enable the blue box</li>
-            </ol>
+        <div style="padding:51.68% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1211860634?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="MyABS F1 video"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <div class="writteninstructions">
+                <ol>
+                    <li>Log in to MyABS.</li>
+                    <li>Select course (where the AI feature is available).</li>
+                    <li>Click on the settings icon in the top right corner.</li>
+                    <li>Scroll to the bottom and expand the “AI course tutor” dropdown.</li>
+                    <li>Tick the “enable” box (it will turn blue).</li>
+                    <li>Click on "save and display".</li>
+                </ol>
+        </div>
     </div>
+    <div class="featureinstructionsheader">Feature 2: AI Assessment Assistant</div>
     <div class="feature2instructions">
         <h3>AI Assessment Tutor</h3>
-            <ol>
-                <li>Log in to MyAIM.</li>
-                <li>Turn on “editing” mode.</li>
-                <li>Go into “assessment resources”.</li>
-                <li>Select “add activity resource”  click on “AI assessment tutor”  [change name]</li>
-                <li>Click into “common module settings”. In the “availability” section, select “make available but don’t show on course page”</li>
-                <li>To move the AI feature into the correct space (i.e. corresponding to the correct assessment task), click on the three dots in the top-right corner, and select “move”. You can drag and drop it to the new location.</li>
-            </ol>
+            <div class="carouselcardcontainer">
+                <div class="carouselcard">
+                    <h3>Set up</h3>
+                    <div class="carouselcardcontentcontainer">
+                        <video  width="640" height="360" src="assets/ABS F2 Card1.mp4" type="video/mp4" controls=""></video>
+                        <ol style="border: 1px solid blue;">
+                            <li>Select course (where the AI feature is available).</li>
+                            <li>Turn on “edit mode”.</li> 
+                            <li>Navigate to the “assessment tasks” section.</li>
+                            <li>Select "add an activity or resource".</li>
+                            <li>Click on "AI Assessment Tutor".</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="carouselcard">
+                    <h3>Configuration</h3>
+                    <div class="carouselcardcontentcontainer">
+                        <video  width="640" height="360" src="assets/ABS F2 Card2.mp4" type="video/mp4" controls=""></video>
+                        <ol style="border: 1px solid blue;">
+                            <li>In the "name" box, enter "AI Assessment Tutor: [name of assessment task]".</li>
+                            <li>Link it to the correct assessment task (by selecting the assessment task from the dropdown list).</li> 
+                            <li>Save changes.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="carouselcard">
+                    <h3>Moving and duplication</h3>
+                    <div class="carouselcardcontentcontainer">
+                        <iframe>Video 1</iframe>
+                        <ol style="border: 1px solid blue;">
+                            <li>Once back to the main page, drag the “AI assessment tutor” under the correct assessment task. </li>
+                            <li>For the remaining assessments, you can duplicate the first AI assessment tutor (select the three dots on the top right, and click “duplicate”), but please ensure to change the “name” and link it to the correct assessment task.</li> 
+                        </ol>
+                    </div>
+                </div>
+            </div>
     </div>
-</div>
+</div> -->
+</section>
 
-<div class="expandinginstructionscontainer" id="ABSexpandinginstructionscontainer">
-    <div class="feature1instructions">
-        <h3>AI Course Tutor</h3>
-            <ol>
-                <li>Log in to MyABS</li>
-                <li>Go into course</li>
-                <li>Settings</li>
-                <li>Last one - AI course tutor - enable the blue box</li>
-            </ol>
-    </div>
-    <div class="feature2instructions">
-        <h3>AI Assessment Tutor</h3>
-            <ol>
-                <li>Select course (where the AI feature is available).</li>
-                <li>Turn on “edit mode”.</li>
-                <li>Navigate to the “assessment tasks” section.</li>
-                <li>Select “add an activity”. </li>
-                <li>Click on the “AI assessment tutor”.</li> 
-                <li>In the “name” box, enter “AI Assessment Tutor – [name of assessment task]”.</li>
-                <li>Link the assessment task to it (by selecting the assessment task from the dropdown list).</li>
-                <li>Save changes.</li>
-                <li>Once back to the main page, drag the “AI assessment tutor” under the correct assessment task.</li> 
-                <li>For the remaining assessments, you can duplicate the first AI assessment tutor (select the three dots on the top right, and click “duplicate”), but please ensure to change the “name” and link it to the correct assessment task.</li>
-            </ol>
-    </div>
-</div>
+<p style="color: white;">If you still require assistance, please reach out to <a href="mailto:mkumar@scentia.com.au" target="_blank" rel="noreferrer">Mike Kumar</a></p>
 
-<p>If you still require assistance, please reach out to <a href="mailto:mkumar@scentia.com.au" target="_blank" rel="noreferrer">Mike Kumar</a></p>
-
-</main>
-
-<footer>
-    <div class="logo">Logo 1</div>
-    <div class="logo">Logo 1</div>
-    <div class="logo">Logo 1</div>
-    <div class="logo">Logo 1</div>
-</footer>
-
-</div>
 
 <script src="script.js"></script>
 </body>

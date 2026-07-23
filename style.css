@@ -2,7 +2,7 @@
 
 * {
     font-family: "Montserrat", sans-serif; 
-    color:  black;
+    box-sizing: border-box;
     /* text-align: center; */
 }
 
@@ -11,31 +11,44 @@ p {
 }
 
 body {
-    background-image: url(assets/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg);
-    background-repeat: no-repeat;
+    /* background-image: url(assets/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg); */
+    background-image: url("assets/backgroundimage3.jpg");
+    background-repeat: repeat;
     background-size: cover;
     background-position: 20% 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #mainsection {
-    width: 1400px;
+    width: 1800px;
     margin: auto;
 }
 
-.mainbox {border-radius: 20px;
-border: 2px solid #F1F2F6;
-padding: 20px;
-opacity: 100%;}
-
 h1 {
-    font-weight: 600;}
+    font-weight: 600;
+    color: white;
+}
+
+.popupbox1 {
+    width: 85vw;
+    background-image: url("assets/backgroundimage3.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 20px;
+    margin: 2%;
+    text-align: center;
+}
 
 
 /* Feature Cards */
 
 .featurecardparentcontainer {display: flex;
 justify-content: center;
-gap: 20%;
+gap: 10%;
 padding: 20px;
 margin-bottom: 30px;
 }
@@ -44,6 +57,7 @@ margin-bottom: 30px;
     width:40vh;
     height:50vh;
     perspective:1000px;
+    /* box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3); */
 }
 
 /* Card */
@@ -113,15 +127,16 @@ margin-bottom: 30px;
 
 /* Feature Cards End */
 
-#heading {
-    background-color: black;
-    border-radius: 10px;
-    color: white;
-    height: auto;
-    width: auto;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 15px;
+.popupbox2 {
+    width: 85vw;
+    background-image: url("assets/backgroundimage3.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 20px;
+    margin: 2%;
+    text-align: center;
 }
 
 .brandbuttoncontainer {
@@ -164,9 +179,54 @@ margin-bottom: 30px;
     background-position: center;
 }
 
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(,0,0,0,0.4);
+}
+
+.modalcontent {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.writteninstructions {
+    border-radius: 20px;
+    text-align: left;
+    color: #DADEDC;
+    /* background-color: #66746C; */
+    background: #8E8B86;
+    background: linear-gradient(90deg,rgba(142, 139, 134, 0.75) 24%, rgba(107, 121, 121, 1) 100%, rgba(73, 79, 71, 1) 59%);
+    padding: 10px;
+}
+
 .expandinginstructionscontainer {
-    display: grid;
-    justify-content: center;
     width: 80%;
     border: 1px solid red;
     border-radius: 30px;
@@ -174,20 +234,184 @@ margin-bottom: 30px;
     margin: auto;
 }
 
+.featureinstructionsheader {
+    background-color: rgb(211, 211, 211);
+    border-bottom:1px solid rgba(211, 211, 211, 0.39);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: left;
+}
+
 h3 {
-    border-radius: 20px;
-    background-color: white;
+    /* border-radius: 20px;
+    background-color: white; */
     padding: 5px;
 }
 
 ol {
     border-radius: 20px;
-    border: 1px solid white;
+    line-height: 1.5;
 }
 
-footer {background-color: black;
+.feature1instructions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    margin-bottom: 20px;
+    gap: 7%;
+    overflow: hidden;
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.feature2instructions {
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+
+}
+
+.carouselcardcontainer {
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    gap: 3vw;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+    z-index: 1;
+}
+
+.carouselcardcontainer::scroll-button(*) {
+  border: 0;
+  font-size: 2rem;
+  background: none;
+  color: black;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.carouselcardcontainer::scroll-button(*):hover,
+.carouselcardcontainer::scroll-button(*):focus {
+  opacity: 1;
+}
+
+.carouselcardcontainer::scroll-button(*):active {
+  translate: 1px 1px;
+}
+
+.carouselcardcontainer::scroll-button(*):disabled {
+  opacity: 0.2;
+  cursor: unset;
+}
+
+.carouselcardcontainer::scroll-button(left) {
+  content: "◄" / "Previous";
+}
+
+.carouselcardcontainer::scroll-button(right) {
+  content: "►" / "Next";
+}
+
+/* .carouselcardcontainer {border: 1px solid purple;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
-height: 20vh;}
+column-gap: 20px;
+} */
 
-.logo {color: white;}
+.carouselcard {
+    border: 1px solid #dddddd;
+    width: 70%;
+    border-radius: 10px;
+    list-style-type: none;  
+    background-color: #eeeeee;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex: 0 0 100%;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+}
+
+.carouselcard:nth-child(even) {
+    background-color: #d2c6ee;
+}
+
+.AIMfeature2card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2%;
+    row-gap: 2%;
+}
+
+.AIMfeature2card > img {
+    width: 90%;
+}
+
+.AIMfeature2card > iframe {
+    width: 90%;
+}
+
+iframe {
+    width: 500px;
+}
+
+.redbox {border: 1px solid red;
+height: 20%;
+width: 20%;
+transform:translateX(150%);
+transform:translateY(-150%);}
+/* not sure why TranslateX is not working */
+
+#editingmodeimage {
+    height: 100px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    background-image: url("assets/Edit Mode Image.png");
+}
+
+#assessmentresourcesimage {
+    height: 250px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    background-image: url("assets/Assessment Resources Image.png");
+}
+
+#commonmodulesettingsimage {
+    background-image: url("assets/Module Settings.png");
+}
+
+.carouselcardcontentcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+iframe {
+    border: 1px solid rgb(204, 36, 190);
+    height: 360px;
+    width: 640px;
+}
+
+ol {
+    text-align: left;
+}
