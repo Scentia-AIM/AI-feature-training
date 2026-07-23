@@ -21,10 +21,10 @@ body {
     align-items: center;
 }
 
-#mainsection {
+/* #mainsection {
     width: 1800px;
     margin: auto;
-}
+} */
 
 h1 {
     font-weight: 600;
@@ -37,10 +37,29 @@ h1 {
     background-position: center;
     background-size: cover;
     border-radius: 20px;
-    border: 1px solid white;
+    border: 1px solid #5E6B64;
     padding: 20px;
     margin: 2%;
     text-align: center;
+    box-shadow: 5px 5px 13px 1px #383838;
+}
+
+#mastercontainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 10px;
+    gap: 50px;
+}
+
+.popupbox1container1 {
+    padding: 10px;
+}
+
+.popupbox1container2 {
+    border-radius: 20px;
+    border: 1px solid #5E6B64;
+    padding: 10px;
+    box-shadow: 5px 5px 13px 1px #383838;
 }
 
 
@@ -57,7 +76,7 @@ margin-bottom: 30px;
     width:40vh;
     height:50vh;
     perspective:1000px;
-    /* box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3); */
+    box-shadow: 5px 5px 13px 1px #383838;
 }
 
 /* Card */
@@ -141,6 +160,7 @@ margin-bottom: 30px;
 
 .brandbuttoncontainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -190,8 +210,10 @@ margin-bottom: 30px;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(,0,0,0,0.4);
+    background-image: url("assets/backgroundimage3.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 100%;
 }
 
 .modalcontent {
