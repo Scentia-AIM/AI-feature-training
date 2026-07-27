@@ -404,15 +404,19 @@ iframe {
     margin: 0 0 25px 0;
 }
 
+.assessmentresourcesbox {
+    position: relative;
+}
+
 
 .redbox {
-    border: 1px solid red;
-    height: 20%;
-    width: 20%;
-/* transform:translateX(150%);
-transform:translateY(-150%); */
-} 
-/* not sure why TranslateX is not working
+    border: 3px solid red;
+    position: absolute;
+    width: 260px;
+    height: 228px;
+    top: 113px;
+    left: 264px;
+}
 
 #editingmodeimage {
     height: 100px;
@@ -442,11 +446,6 @@ transform:translateY(-150%); */
     justify-content: center;
     gap: 20px;
 }
-
-/* iframe {
-    height: 360px;
-    width: 640px;
-} */
 
 
 
