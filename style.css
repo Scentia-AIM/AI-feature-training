@@ -389,7 +389,7 @@ ol {
 }
 
 .AIMfeature2card > img {
-    width: 90%;
+    width: 100%;
 }
 
 .AIMfeature2card > iframe {
@@ -405,12 +405,14 @@ iframe {
 }
 
 
-.redbox {border: 1px solid red;
-height: 20%;
-width: 20%;
-transform:translateX(150%);
-transform:translateY(-150%);}
-/* not sure why TranslateX is not working */
+.redbox {
+    border: 1px solid red;
+    height: 20%;
+    width: 20%;
+/* transform:translateX(150%);
+transform:translateY(-150%); */
+} 
+/* not sure why TranslateX is not working
 
 #editingmodeimage {
     height: 100px;
