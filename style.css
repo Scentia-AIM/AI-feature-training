@@ -408,19 +408,19 @@ iframe {
     margin: 0 0 25px 0;
 }
 
-.assessmentresourcesbox {
+/* .assessmentresourcesbox {
     position: relative;
-}
+} */
 
 
-.redbox {
+/* .redbox {
     border: 3px solid red;
     position: absolute;
     width: 260px;
     height: 228px;
     top: 113px;
     left: 264px;
-}
+} */
 
 #editingmodeimage {
     height: 100px;
